@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><title>ADOLFO | STOCK INTELLIGENCE · v1.0</title><link rel="stylesheet" href="styles.css"></head>
+<body data-theme="dark">
+<header><div><div class="title">ADOLFO | STOCK INTELLIGENCE</div><div class="subtitle">Market Intelligence Terminal · Acciones · Estados Unidos</div></div><div class="grow"></div>
+<div class="toolbar"><label class="sr-only" for="rangeSel">Rango de gráficos</label><select id="rangeSel" aria-label="Rango de gráficos">
+<option value="1D">1D</option><option value="5D">5D</option><option value="1M">1M</option><option value="3M" selected>3M</option><option value="6M">6M</option><option value="12M">12M</option><option value="ALL">ALL</option></select>
+<button id="themeBtn" class="btn" type="button">Tema: oscuro</button></div></header>
+<nav class="tabs"><span class="tab">Precio</span></nav>
+<main><section id="precio" class="view"><div class="section-head"><div><h2>Mercado de acciones</h2><p>Gráficos de TradingView · rango inicial 3 meses.</p></div><span id="precioStatus" class="status neutral">Listo</span></div>
+<div class="grid">
+<article class="card"><h3>Netflix <small>NFLX · Nasdaq</small></h3><div id="nflx" class="tv skeleton"></div></article>
+<article class="card"><h3>Uber <small>UBER · NYSE</small></h3><div id="uber" class="tv skeleton"></div></article>
+<article class="card"><h3>Home Depot <small>HD · NYSE</small></h3><div id="hd" class="tv skeleton"></div></article>
+<article class="card"><h3>Lennar <small>LEN · NYSE</small></h3><div id="len" class="tv skeleton"></div></article>
+<article class="card"><h3>UnitedHealth Group <small>UNH · NYSE</small></h3><div id="unh" class="tv skeleton"></div></article>
+<article class="card"><h3>PepsiCo <small>PEP · Nasdaq</small></h3><div id="pep" class="tv skeleton"></div></article>
+<article class="card"><h3>American Airlines <small>AAL · Nasdaq</small></h3><div id="aal" class="tv skeleton"></div></article>
+<article class="card"><h3>McDonald's <small>MCD · NYSE</small></h3><div id="mcd" class="tv skeleton"></div></article>
+</div></section></main>
+<button id="reloadBtn" class="fab" type="button">Actualizar sección</button>
+<footer><span>ADOLFO | STOCK INTELLIGENCE · v1.0</span><span id="globalUpdated">Sin actualización global</span><span>Información referencial; no constituye asesoría financiera.</span></footer>
+<script src="app.js" defer></script></body></html>
